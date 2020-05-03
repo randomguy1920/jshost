@@ -29,7 +29,7 @@ function renderHeader()
     var div = document.getElementById('header')
     div.innerHTML = `<h3>Report Bug on telegram at: @Anms1920 </h3>
   <p><a href ="https://randomguy1920.github.io/jshost/xxtn.zip">Download chrome extension </a></p>
-  <p><a href ="https://randomguy1920.github.io/jshost/xxtn.pdf">Instructions to install</a></p>
+  <p><a href ="https://raw.githubusercontent.com/randomguy1920/jshost/042fd5b092d004926aeb3a22be6ce19a5b8a1f62/xxtn.pdf">Instructions to install</a></p>
 <p><a href ="https://randomguy1920.github.io/jshost/disclaimer.html">Important Info</a></p>
   <h4>Beta v 1.1</h4>`
 }
