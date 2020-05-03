@@ -27,9 +27,9 @@ $(document).ready(function(){
 function renderHeader()
 {
     var div = document.getElementById('header')
-    div.innerHTML = `<h2>Report Bug at: Anms1920 <h2>
-  <p><a href ="https://randomguy1920.github.io/jshost/xxtn.zip">Download chrome extension <a></p>
-  <p><a href ="https://randomguy1920.github.io/jshost/xxtn.pdf">Instructions to install <a></p>
-<p><a href ="https://randomguy1920.github.io/jshost/disclaimer.html">Important Info <a></p>
+    div.innerHTML = `<h2>Report Bug at: Anms1920 </h2>
+  <p><a href ="https://randomguy1920.github.io/jshost/xxtn.zip">Download chrome extension </a></p>
+  <p><h5><a href ="https://randomguy1920.github.io/jshost/xxtn.pdf">Instructions to install </a></p>
+<p><a href ="https://randomguy1920.github.io/jshost/disclaimer.html">Important Info </a></p>
   <h4>Beta v 1.1</h4>`
 }
