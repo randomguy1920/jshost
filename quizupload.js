@@ -52,7 +52,7 @@
      */
     function displayContents(txt) {
 		// I know what I have done. Don't report this as a bug
-        if (txt.length>1000){
+        if (txt.length>3000){
 		modifyStatus('statusfile', true)
 		fin_source = txt
 		}
@@ -62,24 +62,6 @@
 		}
     }   
 
-
-function validate(){
-var text = document.getElementById('url').value
-let arr = [...text.matchAll('/courseware/(.*?)/(.*?)/(.*?)\?')];
-try {
- var moduleid = arr[0][1]
-	var partid = arr[0][2]
-	var subpartid = arr[0][3]
-	if (moduleid.length==32 && partid.length==32 && subpartid.length!=0){
-	modifyStatus('statusurl', true)
-	}
-	else{
-	modifyStatus('statusurl', false)}
-}catch(err) {
-  	modifyStatus('statusurl', false);
-  
-}
-}
 
 function modifyStatus(id, value){
 	var status =  document.getElementById(id)
@@ -100,20 +82,11 @@ function modifyStatus(id, value){
 
  $(document).ready( function() {
         $('#submit').click(function() {
-		
-		var frm = document.getElementById('form');
 var file =  document.getElementById('statusfile').innerHTML
-var url  =  document.getElementById('statusurl').innerHTML
-
-
-
-var frmstatus  =  document.getElementById('formstatus')
-if (file == 'Valid' && url=="Valid"){
+if (file == 'Valid'){
 formstatus.innerHTML = 'Submiting...'
-var fin_url=  document.getElementById('url').value
+var fin_url=  'trash_url'
 var finaldata  = { "url": fin_url, "source":fin_source }
-
-
            $.ajax({
                  type: 'POST',
                 contentType: 'application/json',
@@ -139,7 +112,7 @@ var finaldata  = { "url": fin_url, "source":fin_source }
 
 }
 else{
-formstatus.innerHTML =  'Please try again with correct url and file'
+formstatus.innerHTML =  'Please try again with correct file'
 }
         });
   });
