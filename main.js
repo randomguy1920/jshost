@@ -24,6 +24,10 @@ $(document).ready(function(){
 })
 }
 
+function clearDiv(id){
+document.getElementById(id).innerHTML ='';
+}
+
 function renderHeader()
 {
     var div = document.getElementById('header')
