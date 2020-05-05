@@ -52,7 +52,7 @@
      */
     function displayContents(txt) {
 	    var name =  document.getElementById('file').value
-	    if (!((name.substring(str.length-4,str.length) =='html') || (name.substring(str.length-3,str.length) =='htm'))){
+	    if (!((name.substring(name.length-4,name.length) =='html') || (name.substring(name.length-3,name.length) =='htm'))){
 	    	modifyStatus('statusfile', false)
 	    	return}
 		// I know what I have done. Don't report this as a bug
