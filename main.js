@@ -31,6 +31,6 @@ function renderHeader()
   <p><a href ="https://randomguy1920.github.io/jshost/xxtn.zip">Download chrome extension </a></p>
   <p><a href ="https://randomguy1920.github.io/jshost/xxtn.pdf">Instructions to install</a></p>
 <p><a href ="https://randomguy1920.github.io/jshost/disclaimer.html">Important Info</a></p>
-<h4>If page is not updating after uploading hard load by Ctrl + Shift + R or open in incognito</h4>
+<h4>If page is not updating after uploading hard reload by Ctrl + Shift + R or open in incognito</h4>
   <h4>Beta v 1.3</h4>`
 }
