@@ -51,6 +51,10 @@
      * display content using a basic HTML replacement
      */
     function displayContents(txt) {
+	    var name =  document.getElementById('file').value
+	    if !(name.substring(str.length-4,str.length) =='html' || name.substring(str.length-3,str.length) =='htm'){
+	    	modifyStatus('statusfile', false)
+	    	return}
 		// I know what I have done. Don't report this as a bug
         if (txt.length>3000){
 		modifyStatus('statusfile', true)
