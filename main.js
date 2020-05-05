@@ -32,6 +32,6 @@ function renderHeader()
   <p><a href ="https://randomguy1920.github.io/jshost/xxtn.pdf">Instructions to install</a></p>
 <p><a href ="https://randomguy1920.github.io/jshost/disclaimer.html">Important Info</a></p>
 <h4><b> If page is not updating after uploading hard reload by Ctrl + Shift + R or open in incognito</b></h4>
-<h4><b><a href ="http://vitol.herokuapp.com/quiz">Upload Quiz</a><></b></h4>
-<p style="text-align: right;"><b>@Anms1920</b></p>
+<h4><b><a href ="http://vitol.herokuapp.com/quiz">Upload Quiz</a></b></h4>
+<p style="text-align: right;"><b>@Anms1920</b></p>`
 }
